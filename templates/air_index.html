@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Air Quality Index Prediction </title>
+
+</head>
+<body>
+    <div class="container">
+        <h2 class='container-heading'><span class="heading_font">Air Quality Index Prediction</span></h2>
+    </div>
+
+    <div class="ml-container">
+        <form action="{{ url_for('predict') }}" method="POST">
+            <br>
+            <h3>Average annual temperature</h3>
+            <input id="first" name="T"  required="required">
+            <br>
+            <h3>Annual Average maximum temperature</h3>
+            <input id="second" name="TM"  required="required">
+            <br>
+            <h3>Annual annual minimum temperature</h3>
+            <input id="third" name="Tm"  required="required">
+            <br>
+            <h3>Sea level Presure</h3>
+            <input id="fourth" name="SLP"  required="required">
+            <br>
+            <h3>Humidity</h3>
+            <input id="fifth" name="H"  required="required">
+            <br>
+            <h3>Annual average wind speed</h3>
+            <input id="sixth" name="V"  required="required">
+            <br>
+            <h3>Maximum wind speed</h3>
+            <input id="seventh" name="VM" required="required">
+            <br>
+            <br>
+            <button id="sub" type="submit ">Submit</button>
+            <br>
+            <br>
+		<p class='footer-description'>©2021 Pavan</p>
+        </form>
+    </div>
+
+<style>
+
+/* Background Image */
+body
+{
+background-image:url("https://raw.githubusercontent.com/pavan330/Air-Quality-Index-/main/air.jpg");
+height: 100%;
+
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+/* Color */
+body{
+	font-family: Arial, Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* Heading Font */
+.container-heading{
+    margin: 0;
+}
+
+.heading_font{
+    color: #black;
+	font-family: 'Pacifico', cursive;
+	font-size: 50px;
+	font-weight: normal;
+}
+
+
+
+/* Box */
+        #first 
+	{
+            border-radius: 14px;
+            height: 25px;
+            width: 500px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #second 
+	{
+            border-radius: 14px;
+            height: 25px;
+	    width:500px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #third 
+	{
+            border-radius: 14px;
+            height: 25px;
+            width: 500px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fourth 
+	{
+            border-radius: 14px;
+            height: 25px;
+            width: 500px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fifth 
+	{
+            border-radius: 14px;
+            height: 25px;
+            width: 500px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #sixth 
+	{
+            border-radius: 14px;
+            height: 25px;
+            width: 500px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #seventh 
+	{
+            border-radius: 14px;
+            height: 25px;
+            width: 500px;
+            font-size: 20px;
+            text-align: center;
+        }
